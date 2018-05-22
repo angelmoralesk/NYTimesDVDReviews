@@ -10,9 +10,9 @@ import Foundation
 
 class NYTimeDVDMovieServices {
     
-    func fetchMovieReviews(completion: @escaping(_ response : Result<MovieReviewResponse, String> ) -> Void ) {
+    func fetchMovieReviewsAtIndex(_ index: Int, completion: @escaping(_ response : Result<MovieReviewResponse, String> ) -> Void ) {
         
-        ApplicationManager.sharedInstance.nyTimeProvider.fetchMovieReviews { (response) in
+        ApplicationManager.sharedInstance.nyTimeProvider.fetchMovieReviewsAtIndex(index) { (response) in
             switch response {
                 case .success(let data):
                     completion(Result.success(data))

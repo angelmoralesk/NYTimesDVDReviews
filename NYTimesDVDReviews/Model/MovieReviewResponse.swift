@@ -32,13 +32,18 @@ struct MovieResult : Decodable {
     let headline : String
     let publicationDate : String
     let multimedia : Multimedia
+    let author : String
+    let summary : String
+    let link : Link
     
     enum MovieResultKeys : String, CodingKey {
         case displayTitle = "display_title"
         case headline
         case publicationDate = "publication_date"
         case multimedia
-        
+        case author = "byline"
+        case summary = "summary_short"
+        case link
     }
     
     init(from decoder: Decoder) throws {
@@ -47,6 +52,9 @@ struct MovieResult : Decodable {
         headline = try container.decode(String.self, forKey: MovieResultKeys.headline)
         publicationDate = try container.decode(String.self, forKey: MovieResultKeys.publicationDate)
         multimedia = try container.decode(Multimedia.self, forKey: MovieResultKeys.multimedia)
+        author = try container.decode(String.self, forKey: MovieResultKeys.author)
+        summary = try container.decode(String.self, forKey: MovieResultKeys.summary)
+        link = try container.decode(Link.self, forKey: MovieResultKeys.link)
     }
     
 }
@@ -63,4 +71,23 @@ struct Multimedia : Decodable {
         src = try container.decode(String.self, forKey: MultimediaKey.src)
     }
 
+}
+
+struct Link : Decodable {
+    let url : String
+    let type : String
+    let suggestedText : String
+    
+    enum LinkKeys : String, CodingKey {
+        case type
+        case url
+        case suggestedText = "suggested_link_text"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: LinkKeys.self)
+        url = try container.decode(String.self, forKey: LinkKeys.url)
+        type = try container.decode(String.self, forKey: LinkKeys.type)
+        suggestedText = try container.decode(String.self, forKey: LinkKeys.suggestedText)
+    }
 }

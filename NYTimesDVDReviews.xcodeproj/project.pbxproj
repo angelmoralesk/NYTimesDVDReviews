@@ -21,7 +21,9 @@
 		6008F4CD20B3B19D0098535E /* DetailMovieReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4CC20B3B19D0098535E /* DetailMovieReviewViewController.swift */; };
 		6008F4D020B3B1B90098535E /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6008F4CE20B3B1B90098535E /* Detail.storyboard */; };
 		6008F4D320B3B3410098535E /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6008F4D120B3B3410098535E /* TableViewHeader.xib */; };
-		6008F4D520B3B3A90098535E /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4D420B3B3A90098535E /* TableViewHeader.swift */; };
+		6008F4D520B3B3A90098535E /* MovieImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4D420B3B3A90098535E /* MovieImageCell.swift */; };
+		6011179020B4937800F8A989 /* MovieWebReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011178F20B4937800F8A989 /* MovieWebReviewViewController.swift */; };
+		6011179320B4939500F8A989 /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6011179120B4939500F8A989 /* Web.storyboard */; };
 		8B8C6A18EAC7CE16EE0CED47 /* Pods_NYTimesDVDReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C605AFE56AEAFE1F0BBA95 /* Pods_NYTimesDVDReviews.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +45,9 @@
 		6008F4CC20B3B19D0098535E /* DetailMovieReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieReviewViewController.swift; sourceTree = "<group>"; };
 		6008F4CF20B3B1B90098535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		6008F4D220B3B3410098535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TableViewHeader.xib; sourceTree = "<group>"; };
-		6008F4D420B3B3A90098535E /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
+		6008F4D420B3B3A90098535E /* MovieImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageCell.swift; sourceTree = "<group>"; };
+		6011178F20B4937800F8A989 /* MovieWebReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWebReviewViewController.swift; sourceTree = "<group>"; };
+		6011179220B4939500F8A989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Web.storyboard; sourceTree = "<group>"; };
 		9487DACBCF0BD2BD7BD5525E /* Pods-NYTimesDVDReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesDVDReviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesDVDReviews/Pods-NYTimesDVDReviews.release.xcconfig"; sourceTree = "<group>"; };
 		96C605AFE56AEAFE1F0BBA95 /* Pods_NYTimesDVDReviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesDVDReviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +119,7 @@
 		6008F4AB20B38A0E0098535E /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6011178E20B4935400F8A989 /* Web */,
 				6008F4CB20B3B1670098535E /* Detail */,
 				6008F4CA20B3B1540098535E /* List */,
 			);
@@ -144,6 +149,7 @@
 				6008F49D20B389FF0098535E /* Main.storyboard */,
 				6008F4CE20B3B1B90098535E /* Detail.storyboard */,
 				6008F4D120B3B3410098535E /* TableViewHeader.xib */,
+				6011179120B4939500F8A989 /* Web.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -185,9 +191,17 @@
 			isa = PBXGroup;
 			children = (
 				6008F4CC20B3B19D0098535E /* DetailMovieReviewViewController.swift */,
-				6008F4D420B3B3A90098535E /* TableViewHeader.swift */,
+				6008F4D420B3B3A90098535E /* MovieImageCell.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		6011178E20B4935400F8A989 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				6011178F20B4937800F8A989 /* MovieWebReviewViewController.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +271,7 @@
 				6008F4D320B3B3410098535E /* TableViewHeader.xib in Resources */,
 				6008F49F20B389FF0098535E /* Main.storyboard in Resources */,
 				6008F4D020B3B1B90098535E /* Detail.storyboard in Resources */,
+				6011179320B4939500F8A989 /* Web.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,9 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6011179020B4937800F8A989 /* MovieWebReviewViewController.swift in Sources */,
 				6008F4CD20B3B19D0098535E /* DetailMovieReviewViewController.swift in Sources */,
 				6008F4B220B38B5D0098535E /* NYTimeDVDMovieAPI.swift in Sources */,
-				6008F4D520B3B3A90098535E /* TableViewHeader.swift in Sources */,
+				6008F4D520B3B3A90098535E /* MovieImageCell.swift in Sources */,
 				6008F4BB20B390BC0098535E /* MovieReviewResponse.swift in Sources */,
 				6008F49C20B389FF0098535E /* NYTDVDMovieListViewController.swift in Sources */,
 				6008F4B720B38D740098535E /* ApplicationManager.swift in Sources */,
@@ -369,6 +385,14 @@
 				6008F4D220B3B3410098535E /* Base */,
 			);
 			name = TableViewHeader.xib;
+			sourceTree = "<group>";
+		};
+		6011179120B4939500F8A989 /* Web.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6011179220B4939500F8A989 /* Base */,
+			);
+			name = Web.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

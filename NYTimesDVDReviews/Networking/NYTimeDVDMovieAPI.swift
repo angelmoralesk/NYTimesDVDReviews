@@ -15,6 +15,6 @@ enum Result<T,S> {
 
 protocol NYTimeDVDMovieAPI {
     
-    func fetchMovieReviews(completion: @escaping (_ response : Result<MovieReviewResponse, String>) -> Void )
+    func fetchMovieReviewsAtIndex(_ index: Int, completion: @escaping (_ response : Result<MovieReviewResponse, String>) -> Void )
     
 }
