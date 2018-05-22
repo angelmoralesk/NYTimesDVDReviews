@@ -110,7 +110,6 @@
 				6008F4AD20B38A260098535E /* Services */,
 				6008F4AC20B38A1C0098535E /* Model */,
 				6008F4AB20B38A0E0098535E /* ViewsControllers */,
-				6008F4A020B389FF0098535E /* Assets.xcassets */,
 				6008F4A520B389FF0098535E /* Info.plist */,
 			);
 			path = NYTimesDVDReviews;
@@ -157,6 +156,7 @@
 		6008F4AF20B38A510098535E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6008F4A020B389FF0098535E /* Assets.xcassets */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -513,6 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4J2U6VS3H;
 				INFOPLIST_FILE = NYTimesDVDReviews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thekairuz.NYTimesDVDReviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,6 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4J2U6VS3H;
 				INFOPLIST_FILE = NYTimesDVDReviews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thekairuz.NYTimesDVDReviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";

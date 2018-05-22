@@ -37,7 +37,7 @@ class DetailMovieReviewViewController: UIViewController {
         model.append(review.author)
         model.append(review.summary)
         model.append("Release date: \(review.publicationDate)")
-        model.append(review.link.suggestedText)
+        model.append("\(review.link.suggestedText) >>")
     }
     
     func isLastCell(index : Int) -> Bool {
@@ -62,13 +62,13 @@ extension DetailMovieReviewViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell")!
         if isFirstCell(index: indexPath.row) {
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 24.0)
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
             cell.textLabel?.textColor = UIColor.black
         } else if isLastCell(index: indexPath.row) {
-            cell.textLabel?.font = UIFont.systemFont(ofSize: 22.0)
-            cell.textLabel?.textColor = UIColor.blue
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 20.0)
+            cell.textLabel?.textColor = UIColor(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)            
         } else {
-            cell.textLabel?.font = UIFont.systemFont(ofSize: 22.0)
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 20.0)
             cell.textLabel?.textColor = UIColor.black
         }
         cell.textLabel?.numberOfLines = 0
