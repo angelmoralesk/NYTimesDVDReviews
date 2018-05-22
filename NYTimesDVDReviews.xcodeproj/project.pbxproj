@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6008F49A20B389FF0098535E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F49920B389FF0098535E /* AppDelegate.swift */; };
+		6008F49C20B389FF0098535E /* NYTDVDMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F49B20B389FF0098535E /* NYTDVDMovieListViewController.swift */; };
+		6008F49F20B389FF0098535E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6008F49D20B389FF0098535E /* Main.storyboard */; };
+		6008F4A120B389FF0098535E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6008F4A020B389FF0098535E /* Assets.xcassets */; };
+		6008F4A420B389FF0098535E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6008F4A220B389FF0098535E /* LaunchScreen.storyboard */; };
+		6008F4B220B38B5D0098535E /* NYTimeDVDMovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4B120B38B5D0098535E /* NYTimeDVDMovieAPI.swift */; };
+		6008F4B420B38BFA0098535E /* NYTimeDVDMovieProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4B320B38BFA0098535E /* NYTimeDVDMovieProvider.swift */; };
+		6008F4B720B38D740098535E /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4B620B38D740098535E /* ApplicationManager.swift */; };
+		6008F4B920B38E250098535E /* NYTimeDVDMovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4B820B38E250098535E /* NYTimeDVDMovieServices.swift */; };
+		6008F4BB20B390BC0098535E /* MovieReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4BA20B390BC0098535E /* MovieReviewResponse.swift */; };
+		6008F4BD20B398E50098535E /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4BC20B398E50098535E /* MovieTableViewCell.swift */; };
+		6008F4CD20B3B19D0098535E /* DetailMovieReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4CC20B3B19D0098535E /* DetailMovieReviewViewController.swift */; };
+		6008F4D020B3B1B90098535E /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6008F4CE20B3B1B90098535E /* Detail.storyboard */; };
+		6008F4D320B3B3410098535E /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6008F4D120B3B3410098535E /* TableViewHeader.xib */; };
+		6008F4D520B3B3A90098535E /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6008F4D420B3B3A90098535E /* TableViewHeader.swift */; };
+		8B8C6A18EAC7CE16EE0CED47 /* Pods_NYTimesDVDReviews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C605AFE56AEAFE1F0BBA95 /* Pods_NYTimesDVDReviews.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23F6500B0ACF16A88D47631F /* Pods-NYTimesDVDReviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesDVDReviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesDVDReviews/Pods-NYTimesDVDReviews.debug.xcconfig"; sourceTree = "<group>"; };
+		6008F49620B389FF0098535E /* NYTimesDVDReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesDVDReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6008F49920B389FF0098535E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6008F49B20B389FF0098535E /* NYTDVDMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTDVDMovieListViewController.swift; sourceTree = "<group>"; };
+		6008F49E20B389FF0098535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6008F4A020B389FF0098535E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6008F4A320B389FF0098535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6008F4A520B389FF0098535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6008F4B120B38B5D0098535E /* NYTimeDVDMovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeDVDMovieAPI.swift; sourceTree = "<group>"; };
+		6008F4B320B38BFA0098535E /* NYTimeDVDMovieProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeDVDMovieProvider.swift; sourceTree = "<group>"; };
+		6008F4B620B38D740098535E /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		6008F4B820B38E250098535E /* NYTimeDVDMovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeDVDMovieServices.swift; sourceTree = "<group>"; };
+		6008F4BA20B390BC0098535E /* MovieReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewResponse.swift; sourceTree = "<group>"; };
+		6008F4BC20B398E50098535E /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		6008F4CC20B3B19D0098535E /* DetailMovieReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieReviewViewController.swift; sourceTree = "<group>"; };
+		6008F4CF20B3B1B90098535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
+		6008F4D220B3B3410098535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TableViewHeader.xib; sourceTree = "<group>"; };
+		6008F4D420B3B3A90098535E /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
+		9487DACBCF0BD2BD7BD5525E /* Pods-NYTimesDVDReviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimesDVDReviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimesDVDReviews/Pods-NYTimesDVDReviews.release.xcconfig"; sourceTree = "<group>"; };
+		96C605AFE56AEAFE1F0BBA95 /* Pods_NYTimesDVDReviews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimesDVDReviews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6008F49320B389FF0098535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B8C6A18EAC7CE16EE0CED47 /* Pods_NYTimesDVDReviews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23F3C00A562B6CA38AD4A20E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96C605AFE56AEAFE1F0BBA95 /* Pods_NYTimesDVDReviews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56DDF7191AF66AFE18460F1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23F6500B0ACF16A88D47631F /* Pods-NYTimesDVDReviews.debug.xcconfig */,
+				9487DACBCF0BD2BD7BD5525E /* Pods-NYTimesDVDReviews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6008F48D20B389FF0098535E = {
+			isa = PBXGroup;
+			children = (
+				6008F49920B389FF0098535E /* AppDelegate.swift */,
+				6008F49820B389FF0098535E /* NYTimesDVDReviews */,
+				6008F49720B389FF0098535E /* Products */,
+				56DDF7191AF66AFE18460F1F /* Pods */,
+				23F3C00A562B6CA38AD4A20E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6008F49720B389FF0098535E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6008F49620B389FF0098535E /* NYTimesDVDReviews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6008F49820B389FF0098535E /* NYTimesDVDReviews */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4B520B38D620098535E /* Manager */,
+				6008F4B020B38A670098535E /* Networking */,
+				6008F4AF20B38A510098535E /* Utilities */,
+				6008F4AE20B38A2E0098535E /* Storyboards */,
+				6008F4AD20B38A260098535E /* Services */,
+				6008F4AC20B38A1C0098535E /* Model */,
+				6008F4AB20B38A0E0098535E /* ViewsControllers */,
+				6008F4A020B389FF0098535E /* Assets.xcassets */,
+				6008F4A520B389FF0098535E /* Info.plist */,
+			);
+			path = NYTimesDVDReviews;
+			sourceTree = "<group>";
+		};
+		6008F4AB20B38A0E0098535E /* ViewsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4CB20B3B1670098535E /* Detail */,
+				6008F4CA20B3B1540098535E /* List */,
+			);
+			path = ViewsControllers;
+			sourceTree = "<group>";
+		};
+		6008F4AC20B38A1C0098535E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4BA20B390BC0098535E /* MovieReviewResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6008F4AD20B38A260098535E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4B820B38E250098535E /* NYTimeDVDMovieServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6008F4AE20B38A2E0098535E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4A220B389FF0098535E /* LaunchScreen.storyboard */,
+				6008F49D20B389FF0098535E /* Main.storyboard */,
+				6008F4CE20B3B1B90098535E /* Detail.storyboard */,
+				6008F4D120B3B3410098535E /* TableViewHeader.xib */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6008F4AF20B38A510098535E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6008F4B020B38A670098535E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4B120B38B5D0098535E /* NYTimeDVDMovieAPI.swift */,
+				6008F4B320B38BFA0098535E /* NYTimeDVDMovieProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6008F4B520B38D620098535E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4B620B38D740098535E /* ApplicationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6008F4CA20B3B1540098535E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6008F49B20B389FF0098535E /* NYTDVDMovieListViewController.swift */,
+				6008F4BC20B398E50098535E /* MovieTableViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6008F4CB20B3B1670098535E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6008F4CC20B3B19D0098535E /* DetailMovieReviewViewController.swift */,
+				6008F4D420B3B3A90098535E /* TableViewHeader.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6008F49520B389FF0098535E /* NYTimesDVDReviews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6008F4A820B389FF0098535E /* Build configuration list for PBXNativeTarget "NYTimesDVDReviews" */;
+			buildPhases = (
+				89C95EDF6E0FE76E19D36EE7 /* [CP] Check Pods Manifest.lock */,
+				6008F49220B389FF0098535E /* Sources */,
+				6008F49320B389FF0098535E /* Frameworks */,
+				6008F49420B389FF0098535E /* Resources */,
+				42371E61E6762FCD499FDFF2 /* [CP] Embed Pods Frameworks */,
+				7D335BB479D1CADD4A6037B0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYTimesDVDReviews;
+			productName = NYTimesDVDReviews;
+			productReference = 6008F49620B389FF0098535E /* NYTimesDVDReviews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6008F48E20B389FF0098535E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = TheKairuz;
+				TargetAttributes = {
+					6008F49520B389FF0098535E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6008F49120B389FF0098535E /* Build configuration list for PBXProject "NYTimesDVDReviews" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6008F48D20B389FF0098535E;
+			productRefGroup = 6008F49720B389FF0098535E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6008F49520B389FF0098535E /* NYTimesDVDReviews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6008F49420B389FF0098535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6008F4A420B389FF0098535E /* LaunchScreen.storyboard in Resources */,
+				6008F4A120B389FF0098535E /* Assets.xcassets in Resources */,
+				6008F4D320B3B3410098535E /* TableViewHeader.xib in Resources */,
+				6008F49F20B389FF0098535E /* Main.storyboard in Resources */,
+				6008F4D020B3B1B90098535E /* Detail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42371E61E6762FCD499FDFF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NYTimesDVDReviews/Pods-NYTimesDVDReviews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYTimesDVDReviews/Pods-NYTimesDVDReviews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D335BB479D1CADD4A6037B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYTimesDVDReviews/Pods-NYTimesDVDReviews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89C95EDF6E0FE76E19D36EE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYTimesDVDReviews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6008F49220B389FF0098535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6008F4CD20B3B19D0098535E /* DetailMovieReviewViewController.swift in Sources */,
+				6008F4B220B38B5D0098535E /* NYTimeDVDMovieAPI.swift in Sources */,
+				6008F4D520B3B3A90098535E /* TableViewHeader.swift in Sources */,
+				6008F4BB20B390BC0098535E /* MovieReviewResponse.swift in Sources */,
+				6008F49C20B389FF0098535E /* NYTDVDMovieListViewController.swift in Sources */,
+				6008F4B720B38D740098535E /* ApplicationManager.swift in Sources */,
+				6008F4B420B38BFA0098535E /* NYTimeDVDMovieProvider.swift in Sources */,
+				6008F4B920B38E250098535E /* NYTimeDVDMovieServices.swift in Sources */,
+				6008F4BD20B398E50098535E /* MovieTableViewCell.swift in Sources */,
+				6008F49A20B389FF0098535E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6008F49D20B389FF0098535E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6008F49E20B389FF0098535E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6008F4A220B389FF0098535E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6008F4A320B389FF0098535E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6008F4CE20B3B1B90098535E /* Detail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6008F4CF20B3B1B90098535E /* Base */,
+			);
+			name = Detail.storyboard;
+			sourceTree = "<group>";
+		};
+		6008F4D120B3B3410098535E /* TableViewHeader.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6008F4D220B3B3410098535E /* Base */,
+			);
+			name = TableViewHeader.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6008F4A620B389FF0098535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6008F4A720B389FF0098535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6008F4A920B389FF0098535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F6500B0ACF16A88D47631F /* Pods-NYTimesDVDReviews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4J2U6VS3H;
+				INFOPLIST_FILE = NYTimesDVDReviews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thekairuz.NYTimesDVDReviews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6008F4AA20B389FF0098535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9487DACBCF0BD2BD7BD5525E /* Pods-NYTimesDVDReviews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4J2U6VS3H;
+				INFOPLIST_FILE = NYTimesDVDReviews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thekairuz.NYTimesDVDReviews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6008F49120B389FF0098535E /* Build configuration list for PBXProject "NYTimesDVDReviews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6008F4A620B389FF0098535E /* Debug */,
+				6008F4A720B389FF0098535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6008F4A820B389FF0098535E /* Build configuration list for PBXNativeTarget "NYTimesDVDReviews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6008F4A920B389FF0098535E /* Debug */,
+				6008F4AA20B389FF0098535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6008F48E20B389FF0098535E /* Project object */;
+}
